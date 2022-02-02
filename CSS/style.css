@@ -1,0 +1,25 @@
+/* Starting Global Rules */
+:root {
+    --main-color: #2d4a9a;
+    --secondary-color: #000000;
+    --third-color: #ff8800;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto Slab", serif;
+}
+h1 {
+  font-family: "PT Sans", sans-serif;
+}
+/* Ending Global Rules */
