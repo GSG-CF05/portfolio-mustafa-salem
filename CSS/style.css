@@ -1,8 +1,8 @@
 /* Starting Global Rules */
 :root {
-    --main-color: #2d4a9a;
-    --secondary-color: #000000;
-    --third-color: #ff8800;
+  --main-color: #01268ad5;
+  --secondary-color: #000000;
+  --third-color: #ff8800;
 }
 * {
   margin: 0;
@@ -23,3 +23,44 @@ h1 {
   font-family: "PT Sans", sans-serif;
 }
 /* Ending Global Rules */
+
+/* Starting Heading Styles */
+header {
+  width: 100vw;
+  height: fit-content;
+  padding: 15px;
+  background-image: linear-gradient(
+    to right,
+    var(--main-color),
+    var(--third-color)
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+}
+.header-nav li {
+  list-style-type: none;
+  margin-right: 30px;
+}
+.header-nav li a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: medium;
+  text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1),
+    10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
+  /* This function is from the internet because noway I'm doing it at this level of my journey hahaha */
+}
+.header-nav li:hover a {
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  border-radius: 15px;
+  background-color: #01258a3d;
+  transition: border-radius 0.3s linear;
+  text-shadow: none;
+}
+/* Ending Heading Styles */
