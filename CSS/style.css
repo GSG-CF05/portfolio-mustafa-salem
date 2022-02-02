@@ -137,3 +137,195 @@ header {
   color: #fff;
 }
 /* Ending the About Me Section styles */
+
+/* Starting the My Skills Section styles */
+.main-area .my-skills {
+  width: 98.9vw;
+  height: 100vh;
+  display: grid;
+  grid: repeat(3, 1fr) / 1fr 1fr;
+  background: url(../media/sec2.jpg) no-repeat center/cover;
+  border-bottom: 10px solid var(--third-color);
+  border-left: 10px solid var(--third-color);
+  color: #fff;
+}
+.main-area .my-skills div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+.main-area .my-skills .css-skill,
+.main-area .my-skills .photoshop-skill,
+.main-area .my-skills .en-skill {
+  border-left: 1px solid #fff;
+}
+.main-area .my-skills .premiere-skill,
+.main-area .my-skills .en-skill {
+  border-bottom: none;
+}
+.main-area .my-skills div i {
+  color: var(--third-color);
+  text-align: center;
+  width: 90px;
+  height: 90px;
+}
+.main-area .my-skills div h5 {
+  font-size: larger;
+  margin-bottom: 30px;
+}
+.main-area .my-skills div p {
+  font-size: large;
+}
+.main-area .my-skills .html-skill {
+  position: relative;
+}
+.main-area .my-skills .html-skill::before {
+  content: "";
+  width: 100px;
+  height: 8px;
+  background-image: linear-gradient(
+    to right,
+    var(--third-color) 0% 80%,
+    #fff 80% 100%
+  );
+  position: absolute;
+  bottom: 10px;
+}
+.main-area .my-skills .html-skill::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5px;
+  right: 338px;
+}
+.main-area .my-skills .css-skill {
+  position: relative;
+}
+.main-area .my-skills .css-skill::before {
+  content: "";
+  width: 100px;
+  height: 8px;
+  background-image: linear-gradient(
+    to right,
+    var(--third-color) 0% 70%,
+    #fff 70% 100%
+  );
+  position: absolute;
+  bottom: 10px;
+}
+.main-area .my-skills .css-skill::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5px;
+  right: 350px;
+}
+.main-area .my-skills .js-skill {
+  position: relative;
+}
+.main-area .my-skills .js-skill::before {
+  content: "";
+  width: 100px;
+  height: 8px;
+  background-image: linear-gradient(
+    to right,
+    var(--third-color) 0% 40%,
+    #fff 40% 100%
+  );
+  position: absolute;
+  bottom: 10px;
+}
+.main-area .my-skills .js-skill::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5px;
+  right: 382px;
+}
+.main-area .my-skills .photoshop-skill {
+  position: relative;
+}
+.main-area .my-skills .photoshop-skill::before {
+  content: "";
+  width: 100px;
+  height: 8px;
+  background-image: linear-gradient(
+    to right,
+    var(--third-color) 0% 65%,
+    #fff 65% 100%
+  );
+  position: absolute;
+  bottom: 10px;
+}
+.main-area .my-skills .photoshop-skill::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5px;
+  right: 356px;
+}
+.main-area .my-skills .premiere-skill {
+  position: relative;
+}
+.main-area .my-skills .premiere-skill::before {
+  content: "";
+  width: 100px;
+  height: 8px;
+  background-image: linear-gradient(
+    to right,
+    var(--third-color) 0% 55%,
+    #fff 55% 100%
+  );
+  position: absolute;
+  bottom: 10px;
+}
+.main-area .my-skills .premiere-skill::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5px;
+  right: 366px;
+}
+.main-area .my-skills .en-skill {
+  position: relative;
+}
+.main-area .my-skills .en-skill::before {
+  content: "";
+  width: 100px;
+  height: 8px;
+  background-image: linear-gradient(
+    to right,
+    var(--third-color) 0% 75%,
+    #fff 75% 100%
+  );
+  position: absolute;
+  bottom: 10px;
+}
+.main-area .my-skills .en-skill::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5px;
+  right: 345px;
+}
+/* Ending the My Skills Section styles */
