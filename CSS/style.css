@@ -348,11 +348,11 @@ header {
   line-height: 150px;
 }
 .contact-me div div {
-  visibility: hidden;
+  /* visibility: hidden; */
   width: calc(100% + 50px);
   height: 12vh;
   color: #000;
-  background-color: rgba(255, 255, 255, 0.698);
+  background-color: rgba(255, 255, 255, 0.548);
   border-radius: 50px;
   font-size: small;
   position: relative;
@@ -363,22 +363,35 @@ header {
   margin-bottom: 20px;
 }
 .contact-me div div::after {
-  visibility: hidden;
+  /* visibility: hidden; */
   content: "";
   position: absolute;
   border-width: 20px;
   border-style: solid;
-  border-color: transparent transparent rgba(255, 255, 255, 0.698) transparent;
+  border-color: transparent transparent rgba(255, 255, 255, 0.548) transparent;
   top: -40px;
   right: 490px;
 }
-.contact-me div i:hover + div,
+/* .contact-me div i:hover + div,
 .contact-me div i:hover + div::after {
   visibility: visible;
+} */
+.contact-me div p span {
+  font-weight: 700;
 }
 .contact-me div i {
   color: var(--third-color);
   margin-bottom: 30px;
 }
-
+.contact-me div p + p a {
+  text-decoration: none;
+  font-variant: small-caps;
+  font-weight: 700;
+  color: #000;
+}
+.contact-me div p + p a:hover {
+  text-decoration: underline;
+  color: var(--third-color);
+  transition: all 0.3s linear;
+}
 /* Ending the My Contacts Section styles */
