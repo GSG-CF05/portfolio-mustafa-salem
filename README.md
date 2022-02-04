@@ -53,8 +53,8 @@ In the footer I used The copyrights sentence, my business email, and my social m
 
 ## The output:-
 
-![Header](https://ibb.co/2tMkW5B)
-![About Me section](https://ibb.co/k9ZLXBg)
-![My Skills section](https://ibb.co/FD2bcqw)
-![My Contacts section](https://ibb.co/s9d73Dp)
-![Footer](https://ibb.co/BfhYYj4)
+![Header](https://i.ibb.co/QNHKpXG/header.png)
+![About Me section](https://i.ibb.co/9VPxWg9/about-me.png)
+![My Skills section](https://i.ibb.co/fxfYZGp/my-skills.png)
+![My Contacts section](https://i.ibb.co/KxpnyQc/contact-me.png)
+![Footer](https://i.ibb.co/FhQddJs/footer.png)
