@@ -18,7 +18,7 @@ html {
   height: 100%;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   min-height: 100%;
 }
 h1,
@@ -45,12 +45,25 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 425px) {
+  header {
+    width: 100%;
+    height: 30vh;
+    flex-direction: column;
+  }
+}
 .header-nav {
   display: flex;
 }
 .header-nav li {
   list-style-type: none;
   margin-right: 2em;
+}
+@media screen and (max-width: 768px) {
+  .header-nav li {
+    font-size: medium;
+    margin-right: 0;
+  }
 }
 .header-nav li a {
   padding: 10px;
@@ -80,9 +93,27 @@ header {
   display: grid;
   grid-template-columns: 2fr 1fr;
   place-content: center;
-  background: url(../media/sec1.jpg) no-repeat center/cover;
+  background-image: url(../media/sec1.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: var(--main-color);
   border-bottom: 10px solid var(--third-color);
   border-right: 10px solid var(--third-color);
+}
+@media screen and (max-width: 768px) {
+  .about-me {
+    height: 200vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-me {
+    height: 100vh;
+    margin: 50px;
+  }
 }
 .about-me .about-me-text {
   color: #fff;
@@ -94,6 +125,17 @@ header {
   text-align: center;
   line-height: 1.8;
 }
+@media screen and (max-width: 425px) {
+  .about-me .about-me-text {
+    height: 50%;
+    line-height: 1.2;
+    font-size: xx-small;
+  }
+  .about-me .about-me-text > h1 {
+    font-size: smaller;
+    margin: 0;
+  }
+}
 .about-me .about-me-text .info {
   display: flex;
   flex-direction: column;
@@ -101,11 +143,13 @@ header {
   align-items: center;
   padding: 1em;
 }
-.about-me .about-me-text .info h3 {
-  margin-bottom: 2em;
-}
 .about-me .about-me-text .info p {
   margin-bottom: 1.2em;
+}
+@media screen and (max-width: 425px) {
+  .about-me .about-me-text .info p {
+    margin-bottom: 0.5em;
+  }
 }
 .inside-heading {
   display: inline-block;
@@ -125,6 +169,18 @@ header {
   transform-style: preserve-3d;
   transition: transform 1s;
   transform-origin: right top;
+}
+@media screen and (max-width: 1200px) {
+  .about-me .personal {
+    width: 60%;
+    height: 30vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-me .personal {
+    width: 55%;
+    height: 65vh;
+  }
 }
 .about-me .personal:hover {
   transform: translateX(-100%) rotateY(-180deg);
@@ -152,7 +208,8 @@ header {
   height: 100vh;
   display: grid;
   grid: auto 1fr 1fr / 1fr 1fr 1fr;
-  background: url(../media/sec2.jpg) no-repeat center/cover;
+  background: var(--main-color) url(../media/sec2.jpg) no-repeat center right;
+  background-attachment: fixed;
   border-bottom: 10px solid var(--third-color);
   border-left: 10px solid var(--third-color);
   color: #fff;
@@ -352,6 +409,75 @@ header {
   bottom: 10px;
   right: 220px;
 }
+@media screen and (max-width: 1200px) {
+  .main-area .my-skills h2 {
+    margin-top: 1em;
+  }
+  .main-area .my-skills .html-skill::after {
+    right: 160px;
+  }
+  .main-area .my-skills .css-skill::after {
+    right: 170px;
+  }
+  .main-area .my-skills .js-skill::after {
+    right: 200px;
+  }
+  .main-area .my-skills .photoshop-skill::after {
+    right: 175px;
+  }
+  .main-area .my-skills .premiere-skill::after {
+    right: 185px;
+  }
+  .main-area .my-skills .en-skill::after {
+    right: 166px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-area .my-skills {
+    height: 150vh;
+  }
+  .main-area .my-skills h2 {
+    margin-top: 1em;
+  }
+  .main-area .my-skills .html-skill::after {
+    right: 90px;
+  }
+  .main-area .my-skills .css-skill::after {
+    right: 100px;
+  }
+  .main-area .my-skills .js-skill::after {
+    right: 130px;
+  }
+  .main-area .my-skills .photoshop-skill::after {
+    right: 105px;
+  }
+  .main-area .my-skills .premiere-skill::after {
+    right: 115px;
+  }
+  .main-area .my-skills .en-skill::after {
+    right: 95px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .main-area .my-skills .html-skill::after {
+    right: 32px;
+  }
+  .main-area .my-skills .css-skill::after {
+    right: 100px;
+  }
+  .main-area .my-skills .js-skill::after {
+    right: 130px;
+  }
+  .main-area .my-skills .photoshop-skill::after {
+    right: 105px;
+  }
+  .main-area .my-skills .premiere-skill::after {
+    right: 115px;
+  }
+  .main-area .my-skills .en-skill::after {
+    right: 95px;
+  }
+}
 /* Ending the My Skills Section styles */
 
 /* Starting the My Contacts Section styles */
@@ -361,7 +487,8 @@ header {
   display: grid;
   grid-template-rows: 150px 1fr 1fr;
   place-content: center;
-  background: url(../media/sec3.jpg) no-repeat center/cover;
+  background: var(--main-color) url(../media/sec3.jpg) no-repeat center center;
+  background-attachment: fixed;
   border-bottom: 10px solid var(--third-color);
   border-right: 10px solid var(--third-color);
   color: #fff;
@@ -418,6 +545,17 @@ header {
   color: var(--third-color);
   transition: all 0.3s linear;
 }
+@media screen and (max-width: 768px) {
+  .main-area .contact-me {
+    height: 130vh;
+  }
+  .contact-me div div {
+    font-size: 12px;
+  }
+  .contact-me div div::after {
+    right: 322px;
+  }
+}
 /* Ending the My Contacts Section styles */
 
 /* Starting the Footer styles */
@@ -449,5 +587,16 @@ footer .social-media i {
 }
 footer .social-media i:hover {
   color: var(--third-color);
+}
+@media screen and (max-width: 768px) {
+  footer {
+    height: 20vh;
+    flex-direction: column;
+  }
+  footer p,
+  footer p + p,
+  footer div {
+    margin-bottom: 10px;
+  }
 }
 /* Ending the Footer styles */
