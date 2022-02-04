@@ -53,10 +53,8 @@ In the footer I used The copyrights sentence, my business email, and my social m
 
 ## The output:-
 
-<p>
-<img src="https://ibb.co/k9ZLXBg" width="800px">
-<img src="https://ibb.co/s9d73Dp" width="800px">
-<img src="https://ibb.co/BfhYYj4" width="800px">
-<img src="https://ibb.co/2tMkW5B" width="800px">
-<img src="https://ibb.co/FD2bcqw" width="800px">
-</p>
+![Header](https://ibb.co/2tMkW5B)
+![About Me section](https://ibb.co/k9ZLXBg)
+![My Skills section](https://ibb.co/FD2bcqw)
+![My Contacts section](https://ibb.co/s9d73Dp)
+![Footer](https://ibb.co/BfhYYj4)
